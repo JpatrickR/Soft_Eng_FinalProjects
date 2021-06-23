@@ -30,6 +30,30 @@ FILE *p1, *p2, *p3;
 
 void start loan()
 {
+    prof in;
+    prof  x[8];
+    char id[10];
+    char id2[10];
+	char id3[10];
+
+	int i , l;
+
+    in.rate = 0.05;
+    in.week = 8.0;
+
+    printf("\nStudent ID#: "); scanf("%s",id);
+    sprintf(buf,"%s%s%s",path1,id,".txt");
+
+    p1 = fopen(buf,mode2);
+    if (p1 == NULL)
+	{
+	    printf("\nNo account found...");
+	}
+	    else
+	{
+
+	}
+
 }
 void view loan()
 {
