@@ -51,7 +51,10 @@ void start loan()
 	}
 	    else
 	{
-
+	    printf("\n Account Found!);
+	    printf("\nConfirm ID#: "); 
+	    scanf("%s", id);	
+	    sprintf(buf,"%s%s%s",path2,id,".txt");
 	}
 
 }
