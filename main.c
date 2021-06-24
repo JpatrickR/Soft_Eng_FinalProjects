@@ -34,8 +34,8 @@ void start loan()
 void view loan()
 {
 	prof in;
-	prof x[];
-	char id[5];
+	prof x[8];
+	char id[10];
 
 	int i,l;
 
@@ -87,14 +87,14 @@ void view loan()
 
 	printf("\nRe-enter ID#: ");	scanf("%s",id);
 	sprintf(buf,"%s%s%s",path3,id,".txt");
-	p3 = fopen(buf,mode2);
+	p3 = fopen(buf,mode3);
 	l = 1;
 	printf("\n<<<Payment Status>>>");
 	printf("\n	WEEK	STATUS");
 		for(i = 0; i < 8; i++)
 		{
 			fscanf(p3,"%s",x[i].remarks);
-			printf(" \n	%d	%s",l+i,x.remarks);
+			printf(" \n	%d	%s",l+i,x[i].remarks);
 		}
 	fclose(p3);
 
